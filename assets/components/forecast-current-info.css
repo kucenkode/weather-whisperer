@@ -1,0 +1,15 @@
+.forecast-current-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.forecast-current-info__temperature {
+    font-size: 3.2rem;
+}
+
+.forecast-current-info__location {
+    font-size: 2.2rem;
+}

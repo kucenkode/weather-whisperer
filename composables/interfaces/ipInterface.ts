@@ -1,0 +1,3 @@
+interface IPData {
+    city: string;
+}

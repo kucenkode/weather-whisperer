@@ -1,0 +1,16 @@
+:root {
+    --forecast-bg: #fff;
+}
+
+.forecast-for-the-week {
+    background-color: var(--forecast-bg);
+    opacity: 0.6;
+    padding: 3rem;
+}
+
+.forecast-for-the-week__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}

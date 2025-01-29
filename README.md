@@ -1,3 +1,5 @@
+To display the data correctly, you need to register at https://www.weatherapi.com/ to get the API key (it's free). Then you need to create an .env file and add this key called WEATHER_API_KEY to it.
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
