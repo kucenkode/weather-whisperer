@@ -1,11 +1,9 @@
 :root {
-    --forecast-bg: #fff;
+    --forecast-bg: #ffffff7c;
 }
 
 .forecast-for-the-week {
     background-color: var(--forecast-bg);
-    opacity: 0.6;
-    padding: 3rem;
 }
 
 .forecast-for-the-week__items {
@@ -13,4 +11,38 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.items__daily-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.items__today-forecast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 3rem;
+}
+
+.today-forecast__forecast-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+.today-forecast__icon {
+    width: 6rem;
+}
+
+.forecast-details__max-temperature, h2 {
+    font-size: 1.5rem;
+    color: #000000;
 }

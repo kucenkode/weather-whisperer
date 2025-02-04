@@ -1,5 +1,6 @@
 @use './main.css';
 
 // Components
+@use './components/header.css';
 @use './components/forecast-for-the-week.css';
 @use './components/forecast-current-info.css';

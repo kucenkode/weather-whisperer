@@ -6,10 +6,21 @@
     gap: 2rem;
 }
 
-.forecast-current-info__temperature {
-    font-size: 3.2rem;
+.forecast-current-info__temperature-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
 }
 
-.forecast-current-info__location {
-    font-size: 2.2rem;
+.forecast-current-info__forecast-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.forecast-current-info__temperature {
+    font-size: 3.2rem;
 }
