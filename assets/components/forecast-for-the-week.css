@@ -11,7 +11,7 @@
     color: white;
 }
 
-.forecast-details {
+.current-information__forecast-details {
     min-width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -22,7 +22,16 @@
     border-radius: 25px;
 }
 
-.forecast-for-the-week__location {
+.forecast-for-the-week__current-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.current-information__location {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;

@@ -14,37 +14,37 @@
     </article>
     <div class="forecast-for-the-week__wrapper">
         <div class="forecast-for-the-week content-wrapper">
-            <section class="forecast-details" itemscope itemtype="http://schema.org/WeatherObservation">
-                <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
-                    <img class="item__icon" src="/public/weather-icons/weather-details/sunrise.svg" alt="Sunrise:"> 
-                    <time itemprop="sunrise"> {{ weather.sunrise }} </time> 
-                </p>
-                <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
-                    <img class="item__icon" src="/public/weather-icons/weather-details/sunset.svg" alt="Sunset:"> 
-                    <time itemprop="sunset"> {{ weather.sunset }} </time>
-                </p>
-                <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
-                    <img class="item__icon" src="/public/weather-icons/weather-details/water-drop.svg" alt="Humidity:"> 
-                    <span itemprop="humidity" itemscope itemtype="http://schema.org/QuantitativeValue">
-                        <span itemprop="value"> {{ weather.humidity }} % </span>
-                        <meta itemprop="unitText" content="percentage" />
-                    </span>
-                </p>
-                <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
-                    <img class="item__icon" src="/public/weather-icons/weather-details/wind.svg" alt="Wind:"> 
-                    <span itemprop="windSpeed" itemscope itemtype="http://schema.org/QuantitativeValue">
-                        <span itemprop="value"> {{ weather.wind_speed }} km/h </span>
-                        <meta itemprop="unitText" content="kilometers per hour"/>
-                    </span>
-                </p>
-            </section>
-            <div class="forecast-for-the-week__daily">
-                <address class="forecast-for-the-week__location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <div class="forecast-for-the-week__current-information">
+                <address class="current-information__location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                     <span itemprop="addressLocality"> {{ weather.city }} </span>
                     <span itemprop="addressCountry"> {{ weather.country }} </span>
                 </address>
-                <section class="forecast-for-the-week__daily-forecast"></section>
+                <section class="current-information__forecast-details" itemscope itemtype="http://schema.org/WeatherObservation">
+                    <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
+                        <img class="item__icon" src="/public/weather-icons/weather-details/sunrise.svg" alt="Sunrise:"> 
+                        <time itemprop="sunrise"> {{ weather.sunrise }} </time> 
+                    </p>
+                    <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
+                        <img class="item__icon" src="/public/weather-icons/weather-details/sunset.svg" alt="Sunset:"> 
+                        <time itemprop="sunset"> {{ weather.sunset }} </time>
+                    </p>
+                    <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
+                        <img class="item__icon" src="/public/weather-icons/weather-details/water-drop.svg" alt="Humidity:"> 
+                        <span itemprop="humidity" itemscope itemtype="http://schema.org/QuantitativeValue">
+                            <span itemprop="value"> {{ weather.humidity }} % </span>
+                            <meta itemprop="unitText" content="percentage" />
+                        </span>
+                    </p>
+                    <p class="forecast-details__item" itemscope itemtype="http://schema.org/QuantitativeValue">
+                        <img class="item__icon" src="/public/weather-icons/weather-details/wind.svg" alt="Wind:"> 
+                        <span itemprop="windSpeed" itemscope itemtype="http://schema.org/QuantitativeValue">
+                            <span itemprop="value"> {{ weather.wind_speed }} km/h </span>
+                            <meta itemprop="unitText" content="kilometers per hour"/>
+                        </span>
+                    </p>
+                </section>
             </div>
+            <section class="forecast-for-the-week__daily-forecast"></section>
         </div>
     </div>
 </template>
