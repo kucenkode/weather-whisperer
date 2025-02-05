@@ -1,26 +1,35 @@
 .forecast-current-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     gap: 2rem;
 }
 
 .forecast-current-info__temperature-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 3rem;
-    width: 100%;
+    gap: 1.5rem;
 }
 
-.forecast-current-info__forecast-details {
+.forecast-details__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.item__icon {
+    width: 2rem;
 }
 
 .forecast-current-info__temperature {
     font-size: 3.2rem;
+}
+
+.forecast-current-info__description {
+    font-size: 1.5rem;
 }

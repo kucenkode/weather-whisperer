@@ -15,7 +15,7 @@ export default {
     async getWeatherData () {
         try {
             const { city } = await this.getUserIP();
-            return await http.instance<WeatherData>(`/current.json?key=${http.APIkey}&q=${city}`);
+            return await http.instance<WeatherData>(`/forecast.json?key=${http.APIkey}&q=${city}`);
         } catch (error) {
             console.error('Error fetching weather data:', error);
             throw new Error('Weather data is unavailable :(');
