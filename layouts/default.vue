@@ -9,5 +9,11 @@
 import headerLayout from './header-layout.vue';
 
 const weatherStore = useWeatherStore();
-weatherStore.fetchWeather();
+
+const fetchWeather = async () => {
+    const { data: response } = await useFetch('/api/useAPI');
+    weatherStore.weatherData = response.value;
+};
+
+fetchWeather();
 </script>

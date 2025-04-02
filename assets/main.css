@@ -6,6 +6,19 @@ html {
 *, ::before, ::after {
     box-sizing: inherit;
     margin: 0;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #332f2c;
+        border-radius: 20px;
+    }
 }
 
 body {
@@ -15,9 +28,12 @@ body {
 
 .wrapper {
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 4rem;
     background-image: url('/weather-bg/sunny.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,6 +43,13 @@ body {
         font-weight: 400;
         font-style: normal;
     }
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    gap: 2rem;
 }
 
 .content-wrapper {

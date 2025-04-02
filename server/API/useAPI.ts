@@ -1,8 +1,8 @@
-import { ref } from 'vue';
 import WeatherDataService from './services/WeatherDataService';
 
 export default defineEventHandler(async (event) => {
-    const weatherData = await WeatherDataService.getWeatherData()
+    const { city } = await WeatherDataService.getUserIP();
+    const currentWeatherData = await WeatherDataService.getWeatherData(city);
 
-    return weatherData
+    return currentWeatherData
 });

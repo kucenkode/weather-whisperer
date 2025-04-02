@@ -1,11 +1,8 @@
-const http = {
-    instance: $fetch.create({
-        baseURL: "http://api.weatherapi.com/v1",
-        headers: {
-            "Content-type": "application/json"
-        }
-    }),
-    APIkey: useRuntimeConfig().private.weatherAPIkey
-};
+const http = $fetch.create({
+    baseURL: "http://api.weatherapi.com/v1",
+    headers: {
+        "Content-type": "application/json"
+    },
+});
 
 export default http
