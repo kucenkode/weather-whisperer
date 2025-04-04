@@ -1,6 +1,5 @@
 .forecast-details {
+    color: black;
     padding: 1.5rem;
-    background-color: #00000045;
-    color: white;
     border-radius: 25px;
 }

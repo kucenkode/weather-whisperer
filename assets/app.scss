@@ -1,7 +1,14 @@
 @use './main.css';
 
-// Components
+/* Components */
 @use './components/header.css';
-@use './components/forecast-for-the-week.css';
-@use './components/forecast-current-info.css';
 @use './components/forecast-details.css';
+@use './components/buttons.css';
+
+/* Pages */
+// Main
+@use './pages/main-page/forecast-for-the-week.css';
+@use './pages/main-page/forecast-current-info.css';
+
+// User profile
+@use './pages/user-profile-page/message.css';

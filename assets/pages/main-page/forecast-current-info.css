@@ -1,0 +1,47 @@
+.forecast-current-info {
+    align-items: center;
+    gap: 2rem;
+}
+
+.forecast-current-info__location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0.5rem;
+    color: #737373;
+}
+
+.forecast-current-info__temperature {
+    font-size: 3.2rem;
+}
+
+.forecast-current-info__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.forecast-current-info__temperature-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.forecast-details__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.item__icon {
+    width: 2.8rem;
+    border-radius: 50%;
+}

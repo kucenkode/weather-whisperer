@@ -1,0 +1,19 @@
+:root {
+    --default-button-background-color: #fff;
+    --default-button-text-color: #000;
+}
+
+.default-button {
+    background-color: var(--default-button-background-color);
+    color: var(--default-button-text-color);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+
+    &:hover {
+        padding: 0.8rem;
+    }
+}

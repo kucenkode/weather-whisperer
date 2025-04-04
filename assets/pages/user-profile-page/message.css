@@ -1,0 +1,10 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+.message__text {
+    text-align: center;
+}
